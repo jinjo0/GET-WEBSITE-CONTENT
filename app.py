@@ -19,5 +19,7 @@ def fetch_content():
         error_message = f"Error fetching content: {str(e)}"
         return render_template('error.html', error_message=error_message)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
+
+
